@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="FirstMavenProject.TestListner"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestCases.ForgotPassword">
+        <methods>
+          <include name="setup"/>
+          <include name="forgotPasswordText"/>
+        </methods>
+      </class> <!-- TestCases.ForgotPassword -->
+      <class name="TestCases.CreateNewAccount">
+        <methods>
+          <include name="createNewButton"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.CreateNewAccount -->
+      <class name="TestCases.LoginCheck">
+        <methods>
+          <include name="setup"/>
+          <include name="loginCheck"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.LoginCheck -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
